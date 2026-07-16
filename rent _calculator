@@ -1,1 +1,15 @@
+print("===== RENT CALCULATOR =====")
 
+rent = int(input("Enter house rent: "))
+food = int(input("Enter food bill: "))
+units = int(input("Enter electricity units: "))
+rate = int(input("Enter price per unit: "))
+other = int(input("Enter other expenses: "))
+people = int(input("Enter number of persons: "))
+
+electricity = units * rate
+total = rent + food + electricity + other
+share = total / people
+
+print("\nTotal Bill:", total)
+print("Each Person Pays:", round(share, 2))
