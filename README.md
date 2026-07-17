@@ -26,9 +26,6 @@ Random Module
 User Input Handling
 Problem Solving
 Logical Thinking
-▶️ How to Run
-Clone the repository
-git clone https://github.com/your-username/python-practice.git
 Open the project folder
 cd python-practice
 Run any Python program
