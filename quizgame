@@ -1,0 +1,34 @@
+questions = [
+    {
+        "question": "Python is which type of language?",
+        "options": ["a) Compiled", "b) Interpreted", "c) Both", "d) None of the above"],
+        "answer": "b"
+    },
+    {
+        "question": "How do we declare a variable in Python?",
+        "options": ["a) var x = 10", "b) x = 10", "c) int x = 10", "d) declare x = 10"],
+        "answer": "b"
+    },
+    {
+        "question": "Why we use for loop in Python?",
+        "options": ["a) to iterate over a sequence", "b) to execute a block of code multiple times", "c) to iterate over a range of numbers", "d) all of the above"],
+        "answer": "d"
+    }
+]
+
+score = 0
+
+for q in questions:
+    print("\n" + q["question"])
+    for option in q["options"]:
+        print(option)
+    
+    user_answer = input("Your answer (a/b/c/d): ").lower()
+    
+    if user_answer == q["answer"]:
+        print("Correct!")
+        score += 1
+    else:
+        print(f"Wrong! Correct answer was: {q['answer']}")
+
+print(f"\nYour final score: {score}/{len(questions)}")
